@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NekoHost | Jeux</title>
+    <title>NekoHost | GameHub</title>
     <style>
+        :root {
+            --primary-color: #1a1a1a; /* Couleur de fond principale */
+            --secondary-color: #2b2d42; /* Couleur secondaire */
+            --accent-color: #0096c7; /* Couleur d'accent */
+            --text-color: #ffffff; /* Couleur du texte */
+            --button-bg-color: #353333; /* Couleur de fond des boutons */
+            --button-border-color: #3d3b3b; /* Couleur de bordure des boutons */
+            --button-hover-bg-color: #484848; /* Couleur de fond des boutons au survol */
+            --button-active-bg-color: #5a5a5a; /* Couleur de fond des boutons lors du clic */
+        }
+
         body {
-            background-color: #1a1a1a;
-            color: white;
+            background-color: var(--primary-color);
+            color: var(--text-color);
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             height: 100vh;
             margin: 0;
+            padding-top: 50px;
             flex-direction: column;
         }
 
         h1 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            color: #e0e0e0;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--text-color);
         }
 
         .button-container {
@@ -33,21 +44,21 @@
 
         button {
             border-radius: 5px;
-            border: 2px solid #3d3b3b;
-            background-color: #353333;
-            color: white;
+            border: 2px solid var(--button-border-color);
+            background-color: var(--button-bg-color);
+            color: var(--text-color);
             padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
         }
 
         button:hover {
-            background-color: #484848;
+            background-color: var(--button-hover-bg-color);
             transform: scale(1.05);
         }
 
         button:active {
-            background-color: #5a5a5a;
+            background-color: var(--button-active-bg-color);
             transform: scale(1);
         }
     </style>
