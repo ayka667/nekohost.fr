@@ -1,51 +1,72 @@
-<head> 
-    <title>
-       Jeux Gratuit Sur Nekohost.fr
-    </title>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux Gratuit Sur Nekohost.fr</title>
     <style>
-    body { background-color: #000000; }
-</style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            border-radius: 5px;
+            border: 2px solid #3d3b3b;
+            background-color: #353333;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #484848;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #5a5a5a;
+            transform: scale(1);
+        }
+    </style>
 </head>
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
-    button {
-        border-radius: 5px;
-      border: 3px solid rgb(61, 59, 59);
-      font-family: Arial, sans-serif;
-  font-size: 100%;
-  background-color: rgb(53, 51, 51);
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-        margin: 10px; 
-    }
-    
-    button:hover {
-  background-color: rgb(48, 48, 48);
-}
-
-    .button-container {
-        display: flex;
-        justify-content: space-around;
-    }
-</style>
-<button onclick="window.location.href='game/calculatrice.html'">Calculatrice</button>
-<button onclick="window.location.href='game/chromedino.html'">Chrome Dino</button>
-<button onclick="window.location.href='game/Evilglitch.html'">Evil Glitch</button>
-<button onclick="window.location.href='game/Square.html'">Black Hole Square</button>
-<button onclick="window.location.href='game/RetroHaunt.html'">Retrohaunt</button>
-<button onclick="window.location.href='game/Konekt.html'">Konekt</button>
-<button onclick="window.location.href='game/chroma.html'">The Chroma Incident</button>
-<button onclick="window.location.href='game/tetris.html'">Tetris</button>
-<button onclick="window.location.href='game/memory.html'">Memory</button>
-<button onclick="window.location.href='game/2048.html'">2048</button>
-<button onclick="window.location.href='game/1v1.lol.html'">1v1 Lol</button>
-<button onclick="window.location.href='game/flappybird.html'">Flappy Bird</button>
-<button onclick="window.location.href='game/dooblejump.html'">Dooble Jump</button>
+<body>
+    <h1>Jeux Gratuit Sur Nekohost.fr</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='game/calculatrice.html'">Calculatrice</button>
+        <button onclick="window.location.href='game/chromedino.html'">Chrome Dino</button>
+        <button onclick="window.location.href='game/Evilglitch.html'">Evil Glitch</button>
+        <button onclick="window.location.href='game/Square.html'">Black Hole Square</button>
+        <button onclick="window.location.href='game/RetroHaunt.html'">Retrohaunt</button>
+        <button onclick="window.location.href='game/Konekt.html'">Konekt</button>
+        <button onclick="window.location.href='game/chroma.html'">The Chroma Incident</button>
+        <button onclick="window.location.href='game/tetris.html'">Tetris</button>
+        <button onclick="window.location.href='game/memory.html'">Memory</button>
+        <button onclick="window.location.href='game/2048.html'">2048</button>
+        <button onclick="window.location.href='game/1v1.lol.html'">1v1 Lol</button>
+        <button onclick="window.location.href='game/flappybird.html'">Flappy Bird</button>
+        <button onclick="window.location.href='game/dooblejump.html'">Dooble Jump</button>
+    </div>
+</body>
+</html>
