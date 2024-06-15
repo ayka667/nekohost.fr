@@ -1,2 +1,5 @@
+# Activer le moteur de réécriture
 RewriteEngine On
+
+# Rediriger /game/ vers /game.html
 RewriteRule ^game/$ /game.html [L,R=301]
