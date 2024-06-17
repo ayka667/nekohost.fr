@@ -12,7 +12,7 @@
         body {
             background-color: #121212;
             color: #ffffff;
-            font-family: 'Open Sans', sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,11 +31,23 @@
             animation: gradient 10s ease infinite;
         }
 
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
         .button-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 15px;
-            margin-top: 30px;
         }
 
         button {
@@ -57,33 +69,28 @@
             background-color: #5a5a5a;
             transform: scale(1);
         }
-
-        button img {
-            width: 50px;
-            height: 50px;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-
-        button span {
-            display: block;
-            font-size: 0.8em;
-            margin-top: 5px;
-        }
     </style>
 </head>
 <body>
     <h1>Bienvenue sur le Hub de jeux</h1>
     <div class="button-container">
-        <button aria-label="Calculatrice" onclick="window.location.href='game/calculatrice.html'">
-          <img src="assets/game-thumbnails/calculatrice.png" alt="Calculatrice">
-          Calculatrice
-          <span>Une calculatrice en ligne pour faire des calculs rapides</span>
-        </button>
-        <button aria-label="Chrome Dino" onclick="window.location.href='game/chromedino.html'">
-          <img src="assets/game-thumbnails/chromedino.png" alt="Chrome Dino">
-          Chrome Dino
-          <span>Un jeu de course sans fin avec un dinosaure</span>
-        </button>
-        <button aria-label="Evil Glitch" onclick="window.location.href='game/Evilglitch.html'">
-          <img src="assets/game-thumbnails/ev
+        <button onclick="window.location.href='game/calculatrice.html'">Calculatrice</button>
+        <button onclick="window.location.href='game/chromedino.html'">Chrome Dino</button>
+        <button onclick="window.location.href='game/Evilglitch.html'">Evil Glitch</button>
+        <button onclick="window.location.href='game/Square.html'">Black Hole Square</button>
+        <button onclick="window.location.href='game/RetroHaunt.html'">Retrohaunt</button>
+        <button onclick="window.location.href='game/Konekt.html'">Konekt</button>
+        <button onclick="window.location.href='game/chroma.html'">The Chroma Incident</button>
+        <button onclick="window.location.href='game/tetris.html'">Tetris</button>
+        <button onclick="window.location.href='game/memory.html'">Memory</button>
+        <button onclick="window.location.href='game/2048.html'">2048</button>
+        <button onclick="window.location.href='game/1v1.lol.html'">1v1 Lol</button>
+        <button onclick="window.location.href='game/flappybird.html'">Flappy Bird</button>
+        <button onclick="window.location.href='game/dooblejump.html'">Dooble Jump</button>
+	<button onclick="window.location.href='game/geometrydash.html'">Geometry Dash</button>
+	<button onclick="window.location.href='game/connect3.html'">Connect 3</button>
+	<button onclick="window.location.href='game/xx142b2.html'">xx142b2</button>
+	<button onclick="window.location.href='game/hextris.html'">Hextris</button>
+    </div>
+</body>
+</html>
