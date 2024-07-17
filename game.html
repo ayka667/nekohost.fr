@@ -4,43 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/assets/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/assets/favicon/favicon-16x16.png">
-	<link rel="manifest" href="assets/assets/favicon/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/assets/favicon/site.webmanifest">
     <title>NekoHost | GameHub</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #36393F; /* Discord background color */
+            color: #FFFFFF; /* White text */
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            flex-direction: column;
         }
 
         h1 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, red, yellow, green, cyan, blue, magenta);
-            background-size: 600%;
-            -webkit-background-clip: text;
-            color: transparent;
-            animation: gradient 10s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #7289DA; /* Discord blue color */
         }
 
         .button-container {
@@ -52,26 +36,50 @@
 
         button {
             border-radius: 5px;
-            border: 2px solid #3d3b3b;
-            background-color: #212121;
-            color: #ffffff;
+            border: 2px solid #202225; /* Discord dark border */
+            background-color: #5865F2; /* Discord button color */
+            color: #FFFFFF;
             padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.3s;
         }
 
         button:hover {
-            background-color: #484848;
+            background-color: #4752C4; /* Discord button hover color */
             transform: scale(1.05);
         }
 
         button:active {
-            background-color: #5a5a5a;
+            background-color: #3C45A5; /* Discord button active color */
+            transform: scale(1);
+        }
+
+        .top-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #7289DA; /* Discord blue color */
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .top-button:hover {
+            background-color: #5B6EAE; /* Slightly darker blue */
+            transform: scale(1.05);
+        }
+
+        .top-button:active {
+            background-color: #4A59A1; /* Even darker blue */
             transform: scale(1);
         }
     </style>
 </head>
 <body>
+    <button class="top-button" onclick="window.location.href='https://nekohost.fr'">Retourner au site</button>
     <h1>Bienvenue sur le Hub de jeux</h1>
     <div class="button-container">
         <button onclick="window.location.href='game/calculatrice.html'">Calculatrice</button>
@@ -87,10 +95,10 @@
         <button onclick="window.location.href='game/1v1.lol.html'">1v1 Lol</button>
         <button onclick="window.location.href='game/flappybird.html'">Flappy Bird</button>
         <button onclick="window.location.href='game/dooblejump.html'">Dooble Jump</button>
-	<button onclick="window.location.href='game/geometrydash.html'">Geometry Dash</button>
-	<button onclick="window.location.href='game/connect3.html'">Connect 3</button>
-	<button onclick="window.location.href='game/xx142b2.html'">xx142b2</button>
-	<button onclick="window.location.href='game/hextris.html'">Hextris</button>
+        <button onclick="window.location.href='game/geometrydash.html'">Geometry Dash</button>
+        <button onclick="window.location.href='game/connect3.html'">Connect 3</button>
+        <button onclick="window.location.href='game/xx142b2.html'">xx142b2</button>
+        <button onclick="window.location.href='game/hextris.html'">Hextris</button>
     </div>
 </body>
 </html>
